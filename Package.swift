@@ -21,6 +21,12 @@ let package = Package(
         .target(
             name: "MimeType",
             dependencies: []),
+        .executableTarget(
+            name: "example",
+            dependencies: ["MimeType"],
+            path: "Example",
+            resources: [.copy("./mime.types")]
+        ),
         .testTarget(
             name: "MimeTypeTests",
             dependencies: ["MimeType"]),
