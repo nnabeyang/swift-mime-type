@@ -1,4 +1,4 @@
-import Foundation.NSBundle
+import Foundation
 import MimeType
 
 let url = Bundle.module.url(forResource: "mime", withExtension: "types")!
