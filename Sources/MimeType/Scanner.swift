@@ -101,7 +101,7 @@ final class Scanner {
                         return false
                     }
                     self.token = token
-                    if token.count > 0 {
+                    if n > 0 {
                         return true
                     }
                 case .failure(let error):
